@@ -33,13 +33,13 @@ module "vpc" {
   private_subnets = var.private_subnets
   public_subnets  = var.public_subnets
 
-  public_dedicated_network_acl = true
-  public_inbound_acl_rules     = local.network_acls["default_inbound"]
-  public_outbound_acl_rules    = local.network_acls["default_outbound"]
+  # public_dedicated_network_acl = true
+  # public_inbound_acl_rules     = local.network_acls["default_inbound"]
+  # public_outbound_acl_rules    = local.network_acls["default_outbound"]
 
-  private_dedicated_network_acl = false
+  # private_dedicated_network_acl = false
 
-  manage_default_network_acl = true
+  # manage_default_network_acl = true
 
   manage_default_route_table = true
   default_route_table_tags   = { DefaultRouteTable = true }
