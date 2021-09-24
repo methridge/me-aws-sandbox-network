@@ -41,14 +41,15 @@ module "vpc" {
 
   # manage_default_network_acl = true
 
-  manage_default_route_table = true
-  default_route_table_tags   = { DefaultRouteTable = true }
+  # manage_default_route_table = true
+  # default_route_table_tags   = { DefaultRouteTable = true }
 
-  enable_dns_hostnames = true
-  enable_dns_support   = true
+  # enable_dns_hostnames = true
+  # enable_dns_support   = true
 
   enable_nat_gateway = true
-  single_nat_gateway = true
+  # single_nat_gateway = true
+  one_nat_gateway_per_az = true
 
   # enable_dhcp_options              = true
   # dhcp_options_domain_name         = "service.consul"
